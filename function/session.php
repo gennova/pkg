@@ -2,9 +2,9 @@
    include('database.php');
 
 define('DB_SERVER', 'localhost');
-   define('DB_USERNAME', 'ypiisema_pkgs');
+   define('DB_USERNAME', 'santoyos_pkgs');
    define('DB_PASSWORD', 'solider33');
-   define('DB_DATABASE', 'ypiisema_pkgs');
+   define('DB_DATABASE', 'santoyos_pkgs');
    $db = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
 
 

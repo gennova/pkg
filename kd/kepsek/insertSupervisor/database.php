@@ -1,8 +1,8 @@
 <?php
 	ini_set('max_execution_time', 0);
-	$dbname = 'ypiisema_pkgs';
+	$dbname = 'santoyos_pkgs';
 	$dbhost = 'localhost';
-	$dbuser = 'ypiisema_pkgs';
+	$dbuser = 'santoyos_pkgs';
 	$dbpass = 'solider33';
 	$dbconn = mysql_connect ($dbhost, $dbuser, $dbpass) or die ('mysql connect failed. ' . mysql_error());
 	mysql_select_db($dbname) or die('cannot select database. ' . mysql_error());

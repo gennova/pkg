@@ -36,12 +36,21 @@ $alltotal=$_GET['sumtotal'];
 $sumtotal=$totaltiga+$empat+$lima+$enam+$tujuh+$delapan+$sembilan+$sepuluh;
 ?>
 
+<table>
+<tr><td>
+<a href="#" onclick="printIt(document.getElementById('printme').innerHTML); return false"><div><button class="sexybutton sexysimple sexylarge" id="button2">Print</button></div></td><td></a><a href='#'><div><button class="sexybutton sexysimple sexylarge" id="button" onclick="goBack()">Kembali</button></div></a></td>
+</tr></table>
+<div id='printme'>
 
-<h3> DETAIL PENILAIAN </h3>
-
-
-    
-
+<h3>DETAIL PENILAIAN</h3>    
+<table>
+	<tr><td>Nama Guru</td><td>:</td><td><?php echo $guru?></td></tr>
+	<tr><td>Cabang</td><td>:</td><td><?php echo $cabang?></td></tr>
+	<tr><td>Unit</td><td>:</td><td><?php echo $unit?></td></tr>
+	<tr><td>Tanggal PKG</td><td>:</td><td><?php echo $waktusekarang ?></td></tr>
+</table>
+<br/>
+</table>
 <table class="table table-hover" border="1">
 	<thead>
 		
@@ -259,4 +268,52 @@ $sumtotal=$totaltiga+$empat+$lima+$enam+$tujuh+$delapan+$sembilan+$sepuluh;
 
 
 
-
+</div>	
+	<script type="text/javascript">
+	
+  var win=null;
+  function printIt(printThis)
+  {
+    win = window.open();
+    self.focus();
+    win.document.open();
+    win.document.write('<'+'html'+'><'+'head'+'><'+'style'+'>');
+    win.document.write('body, td { font-family: Verdana; font-size: 10pt;}');
+    win.document.write('<'+'/'+'style'+'><'+'/'+'head'+'><'+'body'+'>');
+    win.document.write(printThis);
+    win.document.write('<'+'/'+'body'+'><'+'/'+'html'+'>');
+    win.document.close();
+    win.print();
+    win.close();
+  }
+</script>
+  <script>
+$(document).ready(function(){
+var div = document.getElementById('myDiv');
+div.style.visibility = "hidden";
+div.style.display = "none";
+    $("#hide").click(function(){
+        $("div").hide();
+    });
+    $("#show").click(function(){
+        $("div").show();
+    });
+});
+</script>
+  <script type="text/javascript">
+            $(document).ready( function () {
+                $('#table_id').DataTable();
+            });
+        </script>
+<script>
+  $document.ready(function){
+  $("#button2").click(function(){
+        $("hide").show();
+    });  
+  }
+  </script>
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>

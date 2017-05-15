@@ -91,7 +91,7 @@
 
 
     <div class="container" left=" 10px" ; >
-	<?php echo 'ppppppppppppppppppppp'.$_GET['guruspv']; ?>
+	<?php //echo 'ppppppppppppppppppppp'.$_GET['guruspv']; ?>
                 <p><h2><center>INSTRUKSI:</center></h2>
                 1. Bpk/Ibu memiliki tugas untuk memberikan supervisi terhadap  guru sesuai dengan kewenangan yang diberikan oleh Yayasan Penyelenggaraan Ilahi. <br \>
 2. Evaluasi supervisi guru ini sangat penting untuk dijadikan dasar pengembangan para guru. Oleh sebab itu, Bpk/Ibu dimohon untuk mengisi secara obyektif terhadap guru-guru yang disupervisi.<br \>
@@ -150,7 +150,7 @@ $d=date("Y-m-d H:i:s");
         
         <tr>
 		<td rowspan="4" > 1 </td>
-		<th rowspan="4"><h4> Kompetensi Podegoris<br /> </h4> </th>
+		<th rowspan="4"><h4> Kompetensi Pedagogis<br /> </h4> </th>
 		<td>Mengenal dan menghargai karakteristik semua peserta didik sebagai pribadi yang unik </td>
 
 		<td class="td">  <input type="radio" name="satu" value="5" checked> </td>

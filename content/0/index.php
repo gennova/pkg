@@ -1,8 +1,8 @@
 <?php
    define('DB_SERVER', 'localhost');
-   define('DB_USERNAME', 'ypiisema_pkgs');
+   define('DB_USERNAME', 'santoyos_pkgs');
    define('DB_PASSWORD', 'solider33');
-   define('DB_DATABASE', 'ypiisema_pkgs');
+   define('DB_DATABASE', 'santoyos_pkgs');
    $db = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
 
    session_start();
@@ -13,7 +13,7 @@
       $myusername = mysqli_real_escape_string($db,$_POST['username']);
       $mypassword = mysqli_real_escape_string($db,$_POST['password']); 
       
-      $sql = "SELECT user FROM loginlist WHERE user = '$myusername' and pass = md5('$mypassword')";
+      $sql = "SELECT user FROM loginlist WHERE user = '$myusername' and pass = '$mypassword'";
       $result = mysqli_query($db,$sql);
       $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
       $active = $row['user'];
