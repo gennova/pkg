@@ -1,0 +1,4 @@
+[20-Nov-2016 19:12:46 UTC] PHP Warning:  include(../function/database.php): failed to open stream: No such file or directory in /home/ypiisema/public_html/pkgs/kd/kepsek/insertSupervisor/insertSpv.php on line 2
+[20-Nov-2016 19:12:46 UTC] PHP Warning:  include(../function/database.php): failed to open stream: No such file or directory in /home/ypiisema/public_html/pkgs/kd/kepsek/insertSupervisor/insertSpv.php on line 2
+[20-Nov-2016 19:12:46 UTC] PHP Warning:  include(): Failed opening '../function/database.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/ypiisema/public_html/pkgs/kd/kepsek/insertSupervisor/insertSpv.php on line 2
+[20-Nov-2016 19:12:46 UTC] PHP Fatal error:  Call to undefined function insertDataSpv() in /home/ypiisema/public_html/pkgs/kd/kepsek/insertSupervisor/insertSpv.php on line 10

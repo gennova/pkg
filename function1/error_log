@@ -1,0 +1,5 @@
+[14-Dec-2016 16:25:27 UTC] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /home/santoyosephdwiwa/public_html/pkg/function1/database.php on line 7
+[14-Dec-2016 16:26:43 UTC] PHP Warning:  mysql_connect(): Access denied for user 'santoyos_sv'@'localhost' (using password: YES) in /home/santoyosephdwiwa/public_html/pkg/function1/database.php on line 7
+[14-Dec-2016 16:27:19 UTC] PHP Warning:  mysql_connect(): Access denied for user 'santoyos_spv'@'localhost' (using password: YES) in /home/santoyosephdwiwa/public_html/pkg/function1/database.php on line 7
+[14-Dec-2016 16:28:16 UTC] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /home/santoyosephdwiwa/public_html/pkg/function1/showGuru.php on line 7
+[14-Dec-2016 16:32:22 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/santoyosephdwiwa/public_html/pkg/function1/database.php:348) in /home/santoyosephdwiwa/public_html/pkg/function1/insertFixUtama.php on line 81

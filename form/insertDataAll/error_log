@@ -1,0 +1,12 @@
+[20-Nov-2016 14:25:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ypiisema/public_html/pkgs/form/insertDataAll/insert4.php:176) in /home/ypiisema/public_html/pkgs/form/insertDataAll/insert4.php on line 177
+[20-Nov-2016 14:30:49 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ypiisema/public_html/pkgs/form/insertDataAll/insert4.php:176) in /home/ypiisema/public_html/pkgs/form/insertDataAll/insert4.php on line 177
+[20-Nov-2016 14:39:31 UTC] PHP Warning:  mysql_connect(): Access denied for user 'root'@'localhost' (using password: NO) in /home/ypiisema/public_html/pkgs/function/showGuru.php on line 7
+[20-Nov-2016 15:45:42 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ypiisema/public_html/pkgs/form/insertDataAll/insertToSql.php on line 50
+[20-Nov-2016 15:45:56 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ypiisema/public_html/pkgs/form/insertDataAll/insertToSql.php on line 49
+[20-Nov-2016 15:45:58 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ypiisema/public_html/pkgs/form/insertDataAll/insertToSql.php on line 49
+[20-Nov-2016 15:46:14 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ypiisema/public_html/pkgs/form/insertDataAll/insertToSql.php on line 49
+[20-Nov-2016 15:46:16 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ypiisema/public_html/pkgs/form/insertDataAll/insertToSql.php on line 49
+[20-Nov-2016 15:46:33 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ypiisema/public_html/pkgs/form/insertDataAll/insertToSql.php on line 49
+[20-Nov-2016 15:46:39 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ypiisema/public_html/pkgs/form/insertDataAll/insertToSql.php on line 49
+[20-Nov-2016 15:47:53 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ypiisema/public_html/pkgs/form/insertDataAll/insertToSql.php on line 48
+[22-Nov-2016 04:05:34 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/ypiisema/public_html/pkgs/form/insertDataAll/insert4.php:181) in /home/ypiisema/public_html/pkgs/form/insertDataAll/insert4.php on line 182

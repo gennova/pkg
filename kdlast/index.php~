@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<?php 
+	//website setting
+	//ini_set('post_max_size','30M');
+	//ini_set('upload_max_filesize','30M');
+	//ini_set('memory_limit','100M');
+	ini_set('error_reporting','E_ALL & ~E_NOTICE');
+	$root = '/aepkd';
+
+	//session
+	include './kd/index.php';
+ 
+?>
+<?php
+/*<html>
+	<script type="text/javascript" src="<?php echo $root?>/js/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="<?php echo $root?>/css/style.css" />
+	<script type="text/javascript" src="<?php echo $root?>/js/ddaccordion.js"></script>
+	<script type="text/javascript" src="<?php echo $root?>/js/ajax.js"></script>
+	<script type="text/javascript" src="<?php echo $root?>/js/ddaccordion-init.js"></script>
+	<script type="text/javascript" src="<?php echo $root?>/js/jquery.editable.js"></script>
+*/?>
+<?php
+	include './ui/top.php';
+	//include './ui/left.php';
+	include './content/index.php';
+	//include './ui/right.php';
+	//include './ui/bottom.php';
+?>

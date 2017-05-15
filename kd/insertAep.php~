@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+
+<script>
+/dom ready handler
+jQuery(function ($) {
+    //form submit handler
+    $('#booking').submit(function (e) {
+        //check atleat 1 checkbox is checked
+        if (!$('.r.').is(':checked')) {
+            //prevent the default form submit if it is not checked
+            e.preventDefault();
+        }
+    })
+})
+</script>
+
+    <style type="text/css">
+	.td
+	{
+ 		text-align: center;
+  		vertical-align: middle;
+	}
+    </style>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Insert AEP Kebon Dalem</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <!--<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Start AEP KD</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.php">Home</a>
+                    </li>
+                    <li>
+                        <a href="pilihGuru.php">Insert Aep</a>
+                    </li>
+                    <li>
+                        <a href="insertGuru.php">Insert Guru</a>
+                    </li>
+                    <li>
+                        <a href="loginkepsek.php">Login Admin</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('img/contact-bg.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="page-heading">
+                        <h2>SUPERVISI GURU</h2>
+                        <hr class="small">
+                        <span class="subheading">Have questions? Contact 08190128121</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+
+
+    <div class="container" left=" 10px" ; >
+                <p><h2><center>INSTRUKSI:</center></h2>
+                1. Bpk/Ibu memiliki tugas untuk memberikan supervisi terhadap  guru sesuai dengan kewenangan yang diberikan oleh Yayasan Penyelenggaraan Ilahi. <br \>
+2. Evaluasi supervisi guru ini sangat penting untuk dijadikan dasar pengembangan para guru. Oleh sebab itu, Bpk/Ibu dimohon untuk mengisi secara obyektif terhadap guru-guru yang disupervisi.<br \>
+3. Tuliskan identitas guru yang Bapak/Ibu Supervisi di lembar identitas yang sudah disediakan. Berikan penilaian pada para guru sesuai dengan Kegiatan Belajar Mengajar yang berlangsung. <br \>
+4. Semua pernyataan harus diisi.</p>
+    </div>
+    
+    <hr>
+    <div align = "Center">
+
+<?php
+$variable=$_GET['ambilguru'];
+$oddeven=$_GET['ganjilgenap'];
+$tahun=$_GET['years'];
+
+$d=date("Y-m-d H:i:s");
+
+?>
+
+
+    <form id="booking" method ="GET" action ="../form/insertData1.php">
+
+
+    <table border =1 >
+        <tr>
+            <th width="3%">NO</th>
+            <th width="30%">UNSUR YANG DINILAI</th>
+            <th widt="65%">RUBRIK</th>
+            <th colspan="2"> CHECK POINT</th>
+           
+        </tr>
+        <input type="hidden" name="variableuser" value="<?php echo $variable; ?>"></input>
+	<input type="hidden" name="ganjilgenap" value="<?php echo $oddeven; ?>"></input>
+	<input type="hidden" name="tahun" value="<?php echo $tahun; ?>"></input>
+	<input type="hidden" name="waktusekarang" value="<?php echo $d; ?>"></input>
+
+
+        <tr>
+            <th>A</th>
+            <th>Persiapan Pembelajaran</th>
+            <u><th>Dari pernyataan di bawah ini mana yang terlihat / tampak dalam persiapan pembelajaran?</th></u>
+            <td> </td>
+         
+        </tr>
+        
+        <tr>
+            <td rowspan="4" > 1 </td>
+            <th  rowspan="4"><h4> Kelengkapan Administrasi <br \> (Prota , Prosem , Silabus ,rpp)</h4> </th>
+            <td>Prosem/Prota lengkap sesuai dengan format YPII(SK-KD-Indikator-waktu). </td>
+            <td class="td">  <input type="checkbox" name="satu[]" value="1" class="r"> </td>
+         
+        </tr>
+        
+        
+        <tr>
+            <td>
+                Silabus lengkap sesuai SK-KD-Indikator <br \ >
+                Didalamnya terdapat komponen : <br \>
+                1. pengunaan sumber (mis. buku, internet, jurnal, dll) yang beragam. (min. 2 buku teks dan 1 yang lainnya).<br \>
+                2. penggunaan Media (mis. alat peraga, presentasi, film,video,dll)<br \>
+                3. bentuk penilaiannya (mis. formative atau produk atau kuis).<br \> 
+            </td>
+            <td class="td">  <input type="checkbox" name="satu[]" value="2" class="r"> </td>
+        </tr>
+        
+        <tr>
+            <td> 
+                RPP menunjang Silabus (jumlah RPP - alurnya 
+                mendukung pencapaian Indikator yang tertuang pada Silabus
+            </td>
+            <td class="td"> <input type="checkbox" name="satu[]" value="3" class="r"> </td>
+        </tr>
+        
+        <tr>
+            <td>
+                Penyampaian  administrasi pengajaran (prota,prosem, silabus, 
+                rpp)) ke pimpinan - dengan tepat waktu.
+            </td>
+            <td class="td"><input type="checkbox" name="satu[]" value="4" class="r"> </td>
+        </tr>
+       
+        <td></td>
+        
+        
+        
+        <!-- ini ke 2 --> 
+        
+        <tr>
+            <td rowspan="10">2</td>
+            <th  rowspan="10"><h4>Kelengkapan dan kejelasan unsur-unsur RPP</h4> </th>
+            <th colspan="2">2A Pilihlah salah satu yang paling sesuai dengan RPP Guru !</th>       
+        </tr>
+        
+        
+        <tr>
+            <td>RPP tidak mencakup semua unsur dari hal di bawah ini: <br \>
+                a. dibuat sesuai format YPII <br \>
+                b. menunjukkan keterkaitan kegiatan dengan Indikator yang dituju dan 
+                sesuai dengan yang terdapat pada silabus (Kurrikulum YPII) <br \>
+                c.  mengandung unsur Pembukaan, Kegiatan Inti dan Penutup yang saling berkaitan
+            </td>
+            <td class="td">  <input type="radio" name="duasub1" value="1" class="r"> </td>
+        </tr>
+        
+        
+        <tr>
+            <td>
+                RPP mencakup 1  unsur dari hal di bawah ini <br \>
+                a. dibuat sesuai format YPII <br \>
+                b. menunjukkan keterkaitan kegiatan dengan Indikator yang dituju dan sesuai dengan 
+                yang terdapat pada silabus (Kurrikulum YPII) <br \>
+                c.  mengandung unsup Pembukaan, Kegiatan Inti dan Penutup yang saling berkaitan
+            </td>
+            <td class="td">  <input type="radio" name="duasub1" value="2" class="r"> </td>
+        </tr>
+        
+        
+        <tr>
+            <td>
+                RPP mencakup 2  unsur dari hal di bawah ini <br \>
+                a. dibuat sesuai format YPII<br \>
+                b. menunjukkan keterkaitan kegiatan dengan Indikator yang dituju dan sesuai dengan yang terdapat 
+                pada silabus (Kurrikulum YPII)<br \>
+                c.  mengandung unsur Pembukaan, Kegiatan Inti dan Penutup yang saling berkaitan
+            </td>
+            <td class="td">  <input type="radio" name="duasub1" value="3" class="r"> </td>
+        </tr>
+        
+        <tr>
+            <td> 
+            RPP mencakup semua unsur di bawah ini <br \>
+            a. dibuat sesuai format YPII <br \>
+            b. menunjukkan keterkaitan kegiatan dengan Indikator yang dituju dan sesuai dengan yang terdapat pada silabus (Kurikulum YPII)<br \>
+            c.  mengandung unsur Pembukaan, Kegiatan Inti dan Penutup yang saling berkaitan
+            </td>
+            <td class="td">  <input type="radio" name="duasub1" value="4" class="r"> </td>
+        </tr>
+        
+        
+        
+        
+        
+        <th colspan="4">2B Pilihlah salah satu yang paling sesuai dengan RPP Guru !</th>
+     
+        <tr>
+            <td>
+                RPP belum menunjukan suatu  pembelajaran yang konstruk dan juga belum dengan aktivitas yang beragam
+            </td>
+            <td class="td">  <input type="radio" name="duasub2" value="1" class="r"> </td>
+        </tr>
+        
+        
+        <tr>
+            <td>
+                RPP sudah dengan aktivitas yang beragam tetapi belum menunjukan suatu pembelajaran yang 
+                konstruk
+            </td>
+            <td class="td"><input type="radio" name="duasub2" value="2" class="r"> </td>
+        </tr>
+        
+        
+        <tr>
+            <td>
+                RPP sudah menunjukan suatu  pembelajaran yang konstruk tetapi belum dengan aktivitas yang beragam
+            </td>
+            <td class="td">  <input type="radio" name="duasub2" value="3" class="r"> </td>
+         </tr>
+        
+        
+        <tr>
+            <td>
+                RPP menunjukan suatu  pembelajaran yang konstruk dengan aktivitas yang beragam 
+            </td>
+            <td class="td">  <input type="radio" name="duasub2" value="4" class="r"> </td>
+        </tr>
+        
+	
+		
+		
+    </table>
+<center>	<button type="submit">Submit</button> <center>
+        
+    </form>
+</div>    
+    
+   
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
