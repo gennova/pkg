@@ -54,7 +54,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Start AEP KD</a>
+                
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -83,7 +83,7 @@
                     <div class="page-heading">
                         <h2>SUPERVISI GURU</h2>
                         <hr class="small">
-                        <span class="subheading">Have questions? Contact 08190128121</span>
+                        <span class="subheading">Have questions? Contact 085643221232</span>
                     </div>
                 </div>
             </div>
@@ -108,10 +108,10 @@
     
 
   			<tr>
-                            <th>Nama Guru Supervisor </th>
+                            <th>Sekolah / Unit </th>
                             <th>
 				       <SELECT class='form-control' name="ambilnamaguru" id="personCity"> 
-					<option value="">Pilih Guru</option>
+					<option value="">Pilih Unit</option>
 					<?php
 					include ('../function/database.php');
 					$sql="SELECT idspv,namaguru,guruspv,kantorcabang,unit FROM tblinsertdataspv group by guruspv" ;

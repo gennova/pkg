@@ -57,7 +57,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../index.html">Start AEP KD</a>
+                
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -87,9 +87,9 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="page-heading">
-                        <h2>SUPERVISI GURU <br /> Yayasan Penyelenggaraan Ilahi Indonesia</h2>
+                        <h2>PENIALAIAN KINERJA GURU <br /> Yayasan Penyelenggaraan Ilahi Indonesia</h2>
                         <hr class="small">
-                        <span class="subheading">Have questions? Contact 08190128121</span>
+                        <span class="subheading">Have questions? Contact 085643221232</span>
                     </div>
                 </div>
             </div>
