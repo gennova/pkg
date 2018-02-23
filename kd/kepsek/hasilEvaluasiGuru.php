@@ -69,9 +69,6 @@
                     <li>
                         <a href="../pilihGuru.php">Insert Aep</a>
                     </li>
-                    <li>
-                        <a href="../loginkepsek.php">Login Admin</a>
-                    </li>
        		 <li>
                         <a href="./insertDataGuruBaru.php"><b><u>Insert Data Guru</u></b></a>
                     </li>

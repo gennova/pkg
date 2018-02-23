@@ -42,7 +42,7 @@ $sumtotal=$totaltiga+$empat+$lima+$enam+$tujuh+$delapan+$sembilan+$sepuluh;
 </tr></table>
 <div id='printme'>
 
-<h3>DETAIL PENILAIAN</h3>    
+<h3>DETAIL PENILAIAN KINERJA GURU</h3>    
 <table>
 	<tr><td>Nama Guru</td><td>:</td><td><?php echo $guru?></td></tr>
 	<tr><td>Cabang</td><td>:</td><td><?php echo $cabang?></td></tr>
@@ -177,7 +177,7 @@ $sumtotal=$totaltiga+$empat+$lima+$enam+$tujuh+$delapan+$sembilan+$sepuluh;
 		<tr>
 			<td>10</td>
 			<td>	
-				KOMPETENSI TEKNOLOGI INFORMASI DAN KOMUNIKASI
+				KOMPETENSI <br/>TEKNOLOGI INFORMASI DAN KOMUNIKASI
 			</td>
 			<th></th>
 			<th><?php echo $sepuluh;?></th>
@@ -203,7 +203,7 @@ $sumtotal=$totaltiga+$empat+$lima+$enam+$tujuh+$delapan+$sembilan+$sepuluh;
 				Kehadiran di sekolah : 
 			</td>
 			<th></th>
-			<th><?php echo $sebelas;?></th>
+			<th><textarea style ="width:200px ; height:100px"><?php echo $sebelas;?></textarea></th>
 		<tr>
 		
 		<tr>
@@ -212,7 +212,7 @@ $sumtotal=$totaltiga+$empat+$lima+$enam+$tujuh+$delapan+$sembilan+$sepuluh;
 				Ketepatan Waktu Kerja : 
 			</td>
 			<th></th>
-			<th><?php echo $duabelas;?></th>
+			<th><textarea style ="width:200px ; height:100px"><?php echo $duabelas;?></textarea></th>
 		<tr>
 
 		<tr>
@@ -221,7 +221,7 @@ $sumtotal=$totaltiga+$empat+$lima+$enam+$tujuh+$delapan+$sembilan+$sepuluh;
 				Kontribusi Dalam Kegiatan Sekolah :
 			</td>
 			<th></th>
-			<th><?php echo $tigabelas;?></th>
+			<th><textarea style ="width:200px ; height:100px"><?php echo $tigabelas;?></textarea></th>
 		<tr>
 
 		
@@ -231,7 +231,7 @@ $sumtotal=$totaltiga+$empat+$lima+$enam+$tujuh+$delapan+$sembilan+$sepuluh;
 				Kontribusi Dalam Pelatihan :
 			</td>
 			<th></th>
-			<th><?php echo $empatbelas;?></th>
+			<th><textarea style ="width:200px ; height:100px"><?php echo $empatbelas;?></textarea></th>
 		<tr>
 
 		<tr>
@@ -240,17 +240,17 @@ $sumtotal=$totaltiga+$empat+$lima+$enam+$tujuh+$delapan+$sembilan+$sepuluh;
 				Kesediaan Untuk Berbagi:
 			</td>
 			<th></th>
-			<th><?php echo $limabelas;?></th>
+			<th><textarea style ="width:200px ; height:100px"><?php echo $limabelas;?></textarea></th>
 		<tr>
 
 		<tr>
 			<td>16</td>
 			<td>	
-				Kemauan dan Kemampuan Mengangkat Citra Sekolah :
+				Kemauan dan Kemampuan <br />Mengangkat Citra Sekolah :
 
 			</td>
 			<th></th>
-			<th><?php echo $enambelas;?></th>
+			<th><textarea style ="width:200px ; height:100px"><?php echo $enambelas;?></textarea></th>
 		<tr>
 
 		<tr>
@@ -259,7 +259,7 @@ $sumtotal=$totaltiga+$empat+$lima+$enam+$tujuh+$delapan+$sembilan+$sepuluh;
 				Lain - Lain 
 			</td>
 			<th></th>
-			<th><?php echo $tujuhbelas;?></th>
+			<th><textarea style ="width:200px ; height:100px"><?php echo $tujuhbelas;?></textarea></th>
 		<tr>
 
 

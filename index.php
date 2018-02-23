@@ -48,7 +48,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="./content/0/index.php">Kepala Sekolah</a>
+                        <a href="./kd/kepsek/hasilEvaluasiGuru.php">Kepala Sekolah</a>
                     </li>
                     <li>
                         <a href="./content/1/index.php">Guru Supervisor</a>

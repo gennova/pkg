@@ -113,7 +113,7 @@ $tahun=$_GET['years'];
 $kodespv=$_GET['kodespv'];
 $guruspv=$_GET['guruspv'];
 $d=date("Y-m-d H:i:s");
-
+echo '<u>Nama Guru             : '.$guru.'</u>';
 ?>
     <form method ="GET" action ="../form/insertDataAll/insert4.php">
     <table border =1 >

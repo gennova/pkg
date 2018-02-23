@@ -120,8 +120,8 @@
   			<tr>
                             <th>Nama Guru </th>
                             <th>
-				       <SELECT NAME="ambilguru"> 
-					<option value="">Pilih Guru</option>
+				    <SELECT NAME="ambilguru"> 
+					<option value="Guru Belum Dipilih">Pilih Guru</option>
 					<?php
 					//include ('../function/database.php');
 					$sql="SELECT id,nip,detailguru FROM tbldetailnamaguru" ;
@@ -132,7 +132,7 @@
 						$id=$row["id"];   
 						$nip=$row["nip"];										
 						$value=$row["detailguru"];
-						echo "<OPTION VALUE=$value>$value</option>";
+						echo "<OPTION VALUE='$value'>$value</option>";
 					} 
 					?> 
 					</SELECT>
