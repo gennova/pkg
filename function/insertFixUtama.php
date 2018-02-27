@@ -12,8 +12,6 @@ $kelas=$_GET['kelas'];
 $semester=$_GET['semester'];
 $tahun=$_GET['tahun'];
 
-
-
 $satu = $_GET['satu'];
 $dua = $_GET['dua'];
 $duaa = $_GET['duasuba'];
@@ -48,7 +46,11 @@ $bab2=$dua+$duaa+$duab;
 		scorebobot7,scorebobot8,scorebobot9,scorebobot10,scorebobot11,scorebobot12,scorebobot13,scorebobot14,scorebobot15,scorebobot16,scorebobot17) values('$no','$idspv','$guruspv','$tahun','$waktusekarang','$cabang','$unit','$guru','$matkul','$kelas','$semester','$satu','$bab2','$tiga','$empat','$lima','$enam','$tujuh','$delapan','$sembilan',
 		'$sepuluh','$sebelas','$duabelas','$tigabelas','$empatbelas','$limabelas','$enambelas','$tujuhbelas')";
 	//	echo $sql;
-		
+
+		$sql2= "insert into tblshowall (id,idspv,guruspv,tahun,waktusekarang,kantorcabang,unit,namaguru,matapelajaran,kelas,semester,scorebobot1,scorebobot2,scorebobot3,scorebobot4,scorebobot5,scorebobot6,
+		scorebobot7,scorebobot8,scorebobot9,scorebobot10,scorebobot11,scorebobot12,scorebobot13,scorebobot14,scorebobot15,scorebobot16,scorebobot17) values('$no','$idspv','$guruspv','$tahun','$waktusekarang','$cabang','$unit','$guru','$matkul','$kelas','$semester','$satu','$bab2','$tiga','$empat','$lima','$enam','$tujuh','$delapan','$sembilan',
+		'$sepuluh','$sebelas','$duabelas','$tigabelas','$empatbelas','$limabelas','$enambelas','$tujuhbelas')";
+		$query=mysql_query($sql2);
 		$query=mysql_query($sql);
 		if ($query)
 		{

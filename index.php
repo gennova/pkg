@@ -2,7 +2,11 @@
 <html lang="en">
 
 <head>
-
+<style>
+h1 {
+    text-shadow: 4px 4px #800000;
+}
+</style>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +19,8 @@
     <link href="./kd/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="./kd/css/clean-blog.min.css" rel="stylesheet">
+   <link href="./kd/css/clean-blog.min.css" rel="stylesheet">
+
 
    
 
@@ -78,7 +83,7 @@
         </div>
     </header>
         <!-- Footer -->
-        <center><a href="www.tendydeveloper.com">www.tendydeveloper.com</a></center>
+        <center><a href="www.tendydeveloper.com">www.tendydeveloper.com || atanasiustendy@hotmail.com</a></center>
 
    <!-- jQuery -->
     <script src="./kd/js/jquery.js"></script>

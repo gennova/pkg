@@ -53,7 +53,7 @@ scorebobot16,scorebobot17,(scorebobot1+scorebobot2+scorebobot3+scorebobot4+score
 
 	function showAep()
 	{
-		$sql="select id,tblShowAll.idspv,tblShowAll.guruspv,tblshowall.namaguru,tblshowall.kantorcabang,tblshowall.unit,tblshowall.matapelajaran,tblshowall.kelas,tblshowall.semester,tblshowall.tahun,tblshowall.waktusekarang , (tblshowall.scorebobot1+tblshowall.scorebobot2+tblshowall.scorebobot3+tblshowall.scorebobot4+tblshowall.scorebobot5+tblshowall.scorebobot6+tblshowall.scorebobot7+tblshowall.scorebobot8+tblshowall.scorebobot9+tblshowall.scorebobot10) as 'sum' from tblshowall";
+		$sql="select id,tblshowall.idspv,tblshowall.guruspv,tblshowall.namaguru,tblshowall.kantorcabang,tblshowall.unit,tblshowall.matapelajaran,tblshowall.kelas,tblshowall.semester,tblshowall.tahun,tblshowall.waktusekarang , (tblshowall.scorebobot1+tblshowall.scorebobot2+tblshowall.scorebobot3+tblshowall.scorebobot4+tblshowall.scorebobot5+tblshowall.scorebobot6+tblshowall.scorebobot7+tblshowall.scorebobot8+tblshowall.scorebobot9+tblshowall.scorebobot10) as 'sum' from tblshowall";
 		$query=mysql_query($sql);
 		return $query;	
 	}

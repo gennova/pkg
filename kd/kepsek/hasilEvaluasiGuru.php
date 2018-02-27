@@ -96,8 +96,7 @@
         </div>
     </header>
                
-
-   																																																					 <!-- Main Content -->
+<!-- Main Content -->
 <form method="GET" action='../../form/cariHasilGuru.php'>
   Cari Nama Guru : <input type="text" name="cariguru"><br />
 <!--  Cari Semester :	
@@ -107,36 +106,27 @@
 	 </select><br />-->
   <input type="submit" value="Submit">
 </form>
-
-
-    <hr>																																																																																																																																																																																									
+    <hr>														
     <div align = "Center">
-
 <?php
-
 ?>
-    <form method ="POST" action ="">
-   
+    <form method ="POST" action ="">   
             <div class="table-responsive" >
                 <table class="table table-hover" border="3"  bgcolor="#99999">
                     <thead>
                         <tr>
-                            	<th bgcolor="#BCF5A9">No</th>
+                            <th bgcolor="#BCF5A9">No</th>
 				<th bgcolor="#BCF5A9">Nama Guru</th>
 				<th bgcolor="#BCF5A9">Kantor Cabang</th>
 				<th bgcolor="#BCF5A9">Unit </th>
 				<th bgcolor="#BCF5A9">Mata Pelajaran</th>
 				<th bgcolor="#BCF5A9">Kelas</th>
 				<th bgcolor="#BCF5A9">Semester</th>
-				<th bgcolor="#BCF5A9">Tahun Ajaran</th>
-				
-				<th bgcolor="#BCF5A9">Jumlah Score </th>
-				
+				<th bgcolor="#BCF5A9">Tahun Ajaran</th>				
+				<th bgcolor="#BCF5A9">Jumlah Score </th>				
 				<th bgcolor="#BCF5A9">Waktu Insert</th>
-				<th bgcolor="#BCF5A9">Lihat Detail Nilai</th>
-				
+				<th bgcolor="#BCF5A9">Lihat Detail Nilai</th>				
                         </tr>
-
                     </thead>
                     <tbody>
                         
@@ -145,39 +135,22 @@ include('../../function/showGuru.php');
 	$res = showAEP();
   	$i=0;
 	if ($res)
-    	{
-		
+    	{		
 		while ($row = mysql_fetch_array($res)) 
-		{
-			
-	$p=0;	
-
-
-		
-                    		echo "<tr>";
-					
+		{			
+	$p=0;
+                    echo "<tr>";					
 					echo "<td>".$row['id']."</td>";
 					echo "<td>".$row['namaguru']."</td>";
 					echo "<td>".$row['kantorcabang']."</td>";
-					echo "<td>".$row['unit']."</td>";				
-
+					echo "<td>".$row['unit']."</td>";
 					echo "<td>".$row['matapelajaran']."</td>";
-					
-
-
-					echo "<td>".$row['kelas']."</td>";				
-
-
+					echo "<td>".$row['kelas']."</td>";
 					echo "<td>".$row['semester']."</td>";
-					
 					echo "<td>".$row['tahun']."</td>";
-										
-		
 					echo "<td>".$row['sum']." </td>";
 					echo "<td>".$row['waktusekarang']." </td>";
-				
-	       	
-                        echo"<td>"."<a href='./cekNilai.php?kode=".$row['0']."'>Cek Nilai Data </a></td>";
+                    //echo"<td>"."<a href='./cekNilai.php?kode=".$row['0']."'>Cek Nilai Data </a></td>";
                 /*        echo"<td>"."<a href='./formeditPembayaran.php?kode=".$row['0']."'>Delete </a></td>";
 			*/
                   		 echo "</tr>";

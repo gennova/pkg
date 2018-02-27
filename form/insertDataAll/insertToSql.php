@@ -46,7 +46,9 @@ if ($shownamaspv)
 		echo "</tr>";
 	}
 }
+
 ?>
+
 <h3> DETAIL PENILAIAN </h3>
     <form method ="GET" action ="../../function/insertFixUtama.php">   
             <div class="table-responsive" >
@@ -62,10 +64,8 @@ if ($shownamaspv)
 				<th bgcolor="#BCF5A9">Semester</th>
 				<th bgcolor="#BCF5A9">Tahun</th>
 				<th bgcolor="#BCF5A9">Total Nilai </th>
-				<th bgcolor="#BCF5A9">Detail Penilaian</th>
-		
+				<th bgcolor="#BCF5A9">Detail Penilaian</th>		
 			 </tr>
-
                     </thead>
 		<tbody>
 			<tr>
